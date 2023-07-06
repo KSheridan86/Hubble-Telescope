@@ -1,38 +1,26 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'NasaFont';
+  src: url('./fonts/nasa.woff') format('woff');
+  /* Add other font properties if needed */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Use the custom font in your component */
+.nasa {
+  font-family: 'NasaFont', sans-serif;
+  color: antiquewhite;
+  /* Add other styling properties as needed */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-link, .navbar-brand, .navbar-toggler-icon {
+  color: antiquewhite !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar-toggler {
+  border: 2px solid antiquewhite !important;
+  border-color: antiquewhite !important;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-toggler-icon {
+  font-size: 1.2rem;
+  padding: 3px;
 }
